@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/05/29 17:08:07.000.169,=D:\Api Rest Delphi\RestWebServiceXE2-V1.1\Unit1.pas</Transaction>
+    <Transaction>2017/05/29 17:08:32.000.938,D:\Api Rest Delphi\RestWebServiceXE2-V1.1\UntConexao.pas=D:\Api Rest Delphi\RestWebServiceXE2-V1.1\Unit1.pas</Transaction>
+    <Transaction>2017/05/29 17:09:10.000.700,=C:\Delphi\eAudit2.0\eAuditV2\trunk\UntClassHelpers.pas</Transaction>
+    <Transaction>2017/05/29 17:09:10.000.766,=C:\Delphi\eAudit2.0\eAuditV2\trunk\UntFuncoes.pas</Transaction>
+    <Transaction>2017/05/31 08:33:11.000.737,D:\Api Rest Delphi\RestWebServiceXE2-V1.1\ServerMethodsUnit1.pas=D:\Api Rest Delphi\RestWebServiceXE2-V1.1\UntServerMethods.pas</Transaction>
+    <Transaction>2017/05/31 11:30:07.000.530,C:\Delphi\eAudit2.0\eAuditV2\trunk\UntClassHelpers.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

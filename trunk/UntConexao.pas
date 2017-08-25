@@ -1,0 +1,58 @@
+unit UntConexao;
+
+interface
+
+uses
+  UntFuncoes, System.SysUtils, Data.Win.adoDB, ActiveX;
+
+type
+  TConexao = class
+    private
+      fConexao : TADOConnection;
+      fUser : string;
+      fPass : string;
+      fDataBase : string;
+      fHost : string;
+      fPort : integer;
+      constructor CreateP(pHost: string; pBase: string);
+
+    public
+      property Conexao : TADOConnection read fConexao write fConexao;
+      property User : string read fUser write fUser;
+      property Pass : string read fPass write fPass;
+      property DataBase : string read fDataBase write fDataBase;
+      property Host : string read fHost write fHost;
+      property Porta : integer read fPort write fPort;
+      constructor Create(pHost:string; pBase: string);
+
+  end;
+
+  var
+    publicConexao : TConexao;
+
+implementation
+
+{ TConexao }
+
+constructor TConexao.Create(pHost, pBase: string);
+begin
+  if not Assigned(publicConexao) then
+    CreateP(pHost , pBase)
+  else
+    raise Exception.Create('Instancia da Classe já existe, use a variavel publicConexao !');
+end;
+
+constructor TConexao.CreateP(pHost, pBase: string);
+begin
+  inherited Create;
+  CoInitialize(nil);
+  fUser := 'suporte';
+  fPass := 'sfrtprime2017';
+  fDataBase := pBase;
+  fHost := pHost;
+  fPort := 1997;
+  //fConexao := ConnectDBEmpresa(fHost, fDataBase, 'e-Audit API REST', fUser, fPass);
+
+end;
+
+end.
